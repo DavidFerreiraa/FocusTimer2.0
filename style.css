@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 :root {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 
     --tt-timer-color: hsl(240, 6%, 21%);
     --btn-timer-color: hsl(240, 6%, 21%);
@@ -24,4 +27,57 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19.2rem;
+
+    height: 100vh;
+
+    background-color: var(--bg-page-color);
+}
+
+.timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.timer {
+    font-weight: 500;
+    font-size: 12.6rem;
+}
+
+#controls {
+    display: flex;
+    gap: 4rem;
+}
+
+#controls button {
+    font-size: 4.8rem;
+
+    border: none;
+    background: none;
+}
+
+.sounds-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+
+.sound-box {
+    padding: 4.8rem;
+
+    background-color: var(--bg-sound-box-color);
+
+    border-radius: 2.4rem;
+}
+
+.sounds-wrapper i {
+    font-size: 5.6rem;
 }

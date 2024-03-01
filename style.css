@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+
+    --tt-timer-color: hsl(240, 6%, 21%);
+    --btn-timer-color: hsl(240, 6%, 21%);
+    --bg-page-color: hsl(0, 0%, 90%);
+    --bg-sound-box-color: hsl(240, 9%, 89%);
+    --bg-sound-box-selected-color: hsl(194, 97%, 31%);
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

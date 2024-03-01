@@ -62,9 +62,11 @@
 
     border: none;
     background: none;
+
+    cursor: pointer;
 }
 
-.sounds-wrapper {
+#sounds-controls {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.2rem;
@@ -76,8 +78,21 @@
     background-color: var(--bg-sound-box-color);
 
     border-radius: 2.4rem;
+    border: none;
+
+    cursor: pointer;
 }
 
-.sounds-wrapper i {
+#sounds-controls i {
     font-size: 5.6rem;
+    pointer-events: none;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+.selected {
+    background-color: var(--bg-sound-box-selected-color);
 }
